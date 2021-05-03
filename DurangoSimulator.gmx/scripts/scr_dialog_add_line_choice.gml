@@ -1,0 +1,12 @@
+///scr_dialog_add_line_choice(num, text, button_text_1, button_text_2, button_text3, action_1, action_2, action_3, goto_1, goto_2, goto_3, typewriter);
+dialog[argument0, 0] = argument1;
+dialog[argument0, 1] = argument2;
+dialog[argument0, 2] = argument3;
+dialog[argument0, 3] = argument4;
+dialog[argument0, 4] = argument5;
+dialog[argument0, 5] = argument6;
+dialog[argument0, 6] = argument7;
+dialog[argument0, 7] = argument8;
+dialog[argument0, 8] = argument9;
+dialog[argument0, 9] = argument10;
+dialog[argument0, 10] = argument11;
