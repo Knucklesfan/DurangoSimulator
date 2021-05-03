@@ -327,6 +327,8 @@
     <sprite>sprites\spr_shattered</sprite>
     <sprite>sprites\spr_smokeeffect</sprite>
     <sprite>sprites\spr_snow</sprite>
+    <sprite>sprites\spr_snowboard</sprite>
+    <sprite>sprites\msk_snowboard</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_hdground</background>
@@ -401,6 +403,7 @@
     <background>background\bg_texasgrass</background>
     <background>background\bg_frozen_texas</background>
     <background>background\bg_mountainhill</background>
+    <background>background\bg_hillfg</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\pth_brickthrow</path>
@@ -758,6 +761,8 @@
     <object>objects\obj_deadspacemarine</object>
     <object>objects\obj_snowflake</object>
     <object>objects\obj_snowspawner</object>
+    <object>objects\obj_durangohop</object>
+    <object>objects\obj_snowboard</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\durangotakeoff</timeline>

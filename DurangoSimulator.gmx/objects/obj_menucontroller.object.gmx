@@ -75,7 +75,7 @@ xoffsets = array(16,16,16,16,16,16,32,16,16,16,16,16,16,16,16,16);
             <kind>1</kind>
             <string>steps += 2;
 for(x = 0; x &lt; 16; x++) {
-positions[x] = sin(x+steps*0.25)*4;
+positions[x] = sin(x+steps*0.125)*4;
 }
 </string>
           </argument>

@@ -350,3 +350,15 @@ else if(act == 'ALARM0NOW')
 
 
 }
+else if(act == 'ALARM0QUIT')
+{
+    if(goto[action_selected] == -1)
+        npc.conversation += 1;
+    else
+        npc.conversation = goto[action_selected];
+    scr_dialog_reset();
+    npc.alarm[0] = 1;
+    npc = -1;
+    global.dialog = 0;
+
+}

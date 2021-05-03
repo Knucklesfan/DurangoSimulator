@@ -9,7 +9,7 @@
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
   <bbox_right>73</bbox_right>
-  <bbox_top>0</bbox_top>
+  <bbox_top>57</bbox_top>
   <bbox_bottom>75</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
@@ -20,7 +20,6 @@
   <width>74</width>
   <height>76</height>
   <frames>
-    <frame index="0">images\spr_snowboard_0.png</frame>
-    <frame index="1">images\spr_snowboard_1.png</frame>
+    <frame index="0">images\msk_snowboard_0.png</frame>
   </frames>
 </sprite>

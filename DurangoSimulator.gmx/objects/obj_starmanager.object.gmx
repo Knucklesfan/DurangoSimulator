@@ -76,7 +76,7 @@ var w = room_width;
 var h = room_height;
 
 //map mouse movements
-star_spd = 15;
+star_spd = 7.5;
 star_length = 5;
 
 //cycle through each star and move coords
