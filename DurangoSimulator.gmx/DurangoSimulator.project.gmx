@@ -118,6 +118,7 @@
     <sprites name="durango">
       <sprite>sprites\spr_durango_sit</sprite>
       <sprite>sprites\spr_durango_walk</sprite>
+      <sprite>sprites\spr_durango_snowboard</sprite>
       <sprite>sprites\spr_overworlddurangowalk</sprite>
       <sprite>sprites\spr_overworlddurangowalkleft</sprite>
       <sprite>sprites\spr_knux_walk</sprite>
@@ -133,6 +134,7 @@
       <sprite>sprites\spr_tinydurangofall</sprite>
       <sprite>sprites\spr_overworldduranojump</sprite>
       <sprite>sprites\spr_durangospeen</sprite>
+      <sprite>sprites\spr_snowboardspeen</sprite>
     </sprites>
     <sprites name="luke">
       <sprite>sprites\spr_johnny_walk</sprite>
@@ -404,6 +406,11 @@
     <background>background\bg_frozen_texas</background>
     <background>background\bg_mountainhill</background>
     <background>background\bg_hillfg</background>
+    <background>background\bg_blacknwhite</background>
+    <background>background\bg_usearrowkeys</background>
+    <background>background\bg_mountain</background>
+    <background>background\bg_mountain2</background>
+    <background>background\bg_snowtileset</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\pth_brickthrow</path>
@@ -456,6 +463,8 @@
     <script>scripts\script31.gml</script>
     <script>scripts\scr_genericpain.gml</script>
     <script>scripts\scr_toppain.gml</script>
+    <script>scripts\scr_roomgotonextfade.gml</script>
+    <script>scripts\scr_gotonextwithoutfade.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\sh_stars.shader</shader>
@@ -763,6 +772,8 @@
     <object>objects\obj_snowspawner</object>
     <object>objects\obj_durangohop</object>
     <object>objects\obj_snowboard</object>
+    <object>objects\obj_flipper</object>
+    <object>objects\obj_whitefade</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\durangotakeoff</timeline>
@@ -837,6 +848,9 @@
     <room>rooms\level5</room>
     <room>rooms\frozenlevel5</room>
     <room>rooms\funnymountainscene</room>
+    <room>rooms\blacknwhitemoment</room>
+    <room>rooms\arrowkeysmenu</room>
+    <room>rooms\epicsnowboardingscene</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

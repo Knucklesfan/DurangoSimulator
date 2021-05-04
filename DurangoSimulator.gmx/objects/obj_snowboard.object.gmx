@@ -50,8 +50,9 @@
             <kind>1</kind>
             <string>if(other.vspeed &gt; 0) {
 image_index = 1;
-other.vspeed = -20;
-other.alarm[1] = 15;
+other.vspeed = -15;
+other.alarm[1] = 30;
+other.sprite_index = spr_snowboardspeen;
 }
 </string>
           </argument>

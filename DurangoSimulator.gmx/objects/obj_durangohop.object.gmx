@@ -83,6 +83,29 @@ if(global.dialog == 0)
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>scr_gotonextwithoutfade();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="1">
       <action>
         <libid>1</libid>
@@ -101,6 +124,7 @@ if(global.dialog == 0)
           <argument>
             <kind>1</kind>
             <string>depth = 999999;
+alarm[2] = 105;
 </string>
           </argument>
         </arguments>
@@ -127,7 +151,7 @@ if(global.dialog == 0)
           </argument>
           <argument>
             <kind>0</kind>
-            <string>1</string>
+            <string>0.45</string>
           </argument>
         </arguments>
       </action>
@@ -147,7 +171,7 @@ if(global.dialog == 0)
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>-20</string>
+            <string>-15</string>
           </argument>
         </arguments>
       </action>
@@ -167,7 +191,7 @@ if(global.dialog == 0)
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>2.5</string>
+            <string>1.25</string>
           </argument>
         </arguments>
       </action>

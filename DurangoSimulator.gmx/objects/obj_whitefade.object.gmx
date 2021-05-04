@@ -25,43 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.scored = 0;
-global.pause = 0;
-global.music = true;
-global.sfx = true;
-audio_stop_all();
-global.bindings[0] = vk_right;
-global.bindings[1] = vk_left;
-global.bindings[2] = vk_up;
-global.bindings[3] = vk_down;
-global.bindings[4] = ord('Z');
-global.bindings[5] = ord('X');
-global.bindings[6] = ord('C');
-global.bindings[7] = ord('A');
-global.checkpoint = null;
-global.nodeath = false;
-alpha = 0;
-fadeout = false;
-fadein = false;
-fade_speed = 0.04;
-reboot = false;
-load = false;
-clear3d = false;
-override = false;
-override_room = debugscreen;
-global.debug = false;
-global.nodeath = false;
-global.battlemode = false;
-global.levelsbeat = 0;
-global.mousemode = false;
-global.hp = 5;
-global.ammo = 20;
-global.loaded = 6;
-global.flicker = 0;
-global.lasthitx = 0;
-global.lasthity = 0;
-global.bugdetect = 0;
-oldfadespeed = 0;
+            <string>alpha = 1;
+alarm[0] = 120;
+fade = false;
 </string>
           </argument>
         </arguments>
@@ -84,9 +50,7 @@ oldfadespeed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>fadein = false;
-alpha = 0;
-fade_speed = 0.04;
+            <string>alpha = 0;
 </string>
           </argument>
         </arguments>
@@ -109,28 +73,10 @@ fade_speed = 0.04;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-fadeout = false;
-if(reboot) {
-game_restart();
-}
-else if(load) {
-game_load("savegame");
-}
-else if(override) {
-room_goto(override_room);
-}
-else {
-room_goto_next();
-}
-fadein = true;
-if(clear3d) {
-draw_set_alpha_test(false);
-d3d_end();
-}
-
-alarm[2] = 1/fade_speed;
-oldfade_speed = 0;
+            <string>scr_gotonextwithoutfade();
+fade = true;
+alarm[2] = 60;
+hspeed = 0;
 </string>
           </argument>
         </arguments>
@@ -139,24 +85,45 @@ oldfade_speed = 0;
     <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
+        <id>103</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_set_hspeed</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>fadeout = true;
-alarm[1] = 1/fade_speed;
-global.checkpoint = null;
-</string>
+            <kind>0</kind>
+            <string>9</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>301</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_alarm</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>64</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>1</string>
           </argument>
         </arguments>
       </action>
@@ -178,24 +145,15 @@ global.checkpoint = null;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(fadeout) {
-alpha += fade_speed;
-}
-if(fadein) {
-alpha -= fade_speed;
-}
-if(global.flicker &gt; 0) {
-    global.flicker--;
-}
-if(global.bugdetect &gt; 0) {
-    global.bugdetect--;
+            <string>if(fade &amp;&amp; alpha &gt; 0) {
+    alpha-=0.02
 }
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="75">
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -212,28 +170,15 @@ if(global.bugdetect &gt; 0) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_halign(fa_left);
+            <string>
 draw_set_alpha(alpha);
 
-draw_set_colour(c_black);
+draw_set_colour(c_white);
 
-draw_rectangle(0,0,room_width,room_height,-1);
+draw_rectangle(x-64,0,x-1+room_width,room_height,-1);
 
 draw_set_alpha(1); //reset alpha value so it doesn't mess with other draw events
-draw_set_colour(c_white);
-draw_set_font(fnt_debug);
-s = string(alpha) + " " + string(fps);
-if(global.nodeath) {
-draw_set_color(c_red);
-s += " no death mode enabled.";
-}
-if(global.debug) {
-    draw_text(10,10, s); 
-    if(instance_exists(par_player)) {
-        draw_text(10,20, string(par_player.x));
-        draw_text(10,30, string(par_player.y));
-    }
-}
+
 </string>
           </argument>
         </arguments>

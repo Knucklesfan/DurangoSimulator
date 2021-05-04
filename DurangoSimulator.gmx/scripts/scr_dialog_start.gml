@@ -1,4 +1,5 @@
 ///scr_dialog_start();
+obj_dialog.typewriter_speed = obj_dialog.typewriter_speed * (room_speed/30)
 obj_dialog.text = dialog[conversation, 0];
 obj_dialog.button[0] = dialog[conversation, 1];
 obj_dialog.button[1] = dialog[conversation, 2];
