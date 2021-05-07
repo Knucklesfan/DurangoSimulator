@@ -544,6 +544,7 @@
       <object>objects\obj_teleporterexit</object>
       <object>objects\obj_hurtblock</object>
       <object>objects\obj_solid</object>
+      <object>objects\par_solid</object>
       <object>objects\obj_semisolid</object>
       <object>objects\obj_checkpoint</object>
       <object>objects\obj_texaspoint</object>

@@ -5,10 +5,10 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>par_player</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="3" enumb="0">
+    <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,7 +25,93 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>grav = 0.8;
+
+vx = 0;
+vy = 0;
+
+cx = 0;
+cy = 0;
+
+grv = 0.6;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>obj_durangosnowboard</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>key_right = keyboard_check(vk_right);
+key_left = keyboard_check(vk_left);
+key_jump = keyboard_check_pressed(ord("X"));
+vx = (key_right - key_left) * 4;
+
+var vxNew, vyNew;
+
+// Handle sub-pixel movement
+cx += vx;
+cy += vy;
+vxNew = round(cx);
+vyNew = round(cy);
+cx -= vxNew;
+cy -= vyNew;
+
+
+if !place_meeting(x,y+1,par_solid) {
+
+    //If you're not touching the ground, add gravity
+    vy += grv;
+
+}
+    vx = (key_right - key_left) * 4;
+// Vertical
+repeat(abs(vy)) {
+    if (!place_meeting(x, y + sign(vy), par_solid))
+        y += sign(vy); 
+    else {
+        vy = 0;
+        break;
+    }
+}
+
+// Horizontal
+repeat(abs(vx)) {
+    // Move up slope
+    if (place_meeting(x + sign(vx), y, par_solid) &amp;&amp; place_meeting(x + sign(vx), y - 1, par_solid) &amp;&amp; !place_meeting(x + sign(vx), y - 2, par_solid))
+        y -= 2;
+    else if (place_meeting(x + sign(vx), y, par_solid) &amp;&amp; !place_meeting(x + sign(vx), y - 1, par_solid))
+        --y;
+    
+    // Move down slope
+    if (!place_meeting(x + sign(vx), y, par_solid) &amp;&amp; !place_meeting(x + sign(vx), y + 1, par_solid) &amp;&amp; !place_meeting(x + sign(vx), y + 2, par_solid) &amp;&amp; place_meeting(x + sign(vx), y + 3, par_solid))
+        y += 2;
+    else if (!place_meeting(x + sign(vx), y, par_solid) &amp;&amp; !place_meeting(x + sign(vx), y + 1, par_solid) &amp;&amp; place_meeting(x + sign(vx), y + 2, par_solid))
+        ++y; 
+
+    if (!place_meeting(x + sign(vx), y, par_solid))
+        x += sign(vx); 
+    else {
+        vx = 0;
+        break;
+    }
+}
+
+</string>
           </argument>
         </arguments>
       </action>
