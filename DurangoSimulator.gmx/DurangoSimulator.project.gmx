@@ -157,6 +157,7 @@
     </sprites>
     <sprite>sprites\spr_enemy_tube</sprite>
     <sprite>sprites\spr_slope</sprite>
+    <sprite>sprites\spr_hardslope</sprite>
     <sprite>sprites\spr_semisolid</sprite>
     <sprite>sprites\spr_camera</sprite>
     <sprite>sprites\spr_trigger</sprite>
@@ -331,6 +332,8 @@
     <sprite>sprites\spr_snow</sprite>
     <sprite>sprites\spr_snowboard</sprite>
     <sprite>sprites\msk_snowboard</sprite>
+    <sprite>sprites\spr_superhardslope</sprite>
+    <sprite>sprites\spr_ingamesnowboard</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_hdground</background>
@@ -735,8 +738,12 @@
         </objects>
       </objects>
     </objects>
-    <objects name="depreciated">
+    <objects name="gimmickstuff">
       <object>objects\obj_slope</object>
+      <object>objects\obj_hardslope</object>
+      <object>objects\obj_superhardslope</object>
+    </objects>
+    <objects name="depreciated">
       <object>objects\obj_control</object>
       <object>objects\obj_starbackdrop</object>
       <object>objects\obj_fallingpickle</object>
@@ -774,6 +781,7 @@
     <object>objects\obj_snowboard</object>
     <object>objects\obj_flipper</object>
     <object>objects\obj_whitefade</object>
+    <object>objects\obj_durangosnowboard</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\durangotakeoff</timeline>

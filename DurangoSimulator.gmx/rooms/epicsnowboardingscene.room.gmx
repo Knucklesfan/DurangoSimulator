@@ -41,17 +41,123 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="-1" objName="" xview="0" yview="0" wview="512" hview="448" xport="0" yport="0" wport="512" hport="448" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="&lt;undefined&gt;" xview="0" yview="0" wview="512" hview="448" xport="0" yport="0" wport="512" hport="448" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
-  <instances/>
-  <tiles/>
+  <instances>
+    <instance objName="obj_slope" x="96" y="576" name="inst_1476270E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_superhardslope" x="224" y="608" name="inst_921BEDC5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_superhardslope" x="544" y="544" name="inst_8750E6C0" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="160" y="608" name="inst_CFF0EE2D" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="0" y="576" name="inst_A673C642" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="224" y="672" name="inst_E54EC5A1" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="128" y="608" name="inst_95EDF7AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="320" y="672" name="inst_BFD8D59B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slope" x="384" y="640" name="inst_D239B9EE" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="384" y="640" name="inst_F53DFA2F" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="448" y="608" name="inst_DA28998B" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="544" y="544" name="inst_96B106D6" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="704" y="576" name="inst_54F9DBEB" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="512" y="608" name="inst_86C756AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hardslope" x="448" y="608" name="inst_0A0BDEFD" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slope" x="704" y="512" name="inst_7798BD6F" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+  </instances>
+  <tiles>
+    <tile bgName="bg_snowtileset" x="0" y="576" w="32" h="64" xo="32" yo="0" id="10011073" name="inst_99CB14FC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="32" y="576" w="32" h="64" xo="32" yo="0" id="10011074" name="inst_4BA28CBB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="64" y="576" w="32" h="64" xo="32" yo="0" id="10011075" name="inst_B5584521" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="96" y="576" w="64" h="64" xo="192" yo="0" id="10011078" name="inst_BC370057" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="160" y="608" w="32" h="64" xo="32" yo="0" id="10011085" name="inst_C8CBC895" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="224" y="704" w="32" h="32" xo="32" yo="32" id="10011087" name="inst_B7BD9EF1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="256" y="704" w="32" h="32" xo="32" yo="32" id="10011088" name="inst_8E614D7E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="160" y="672" w="32" h="32" xo="32" yo="32" id="10011092" name="inst_28F42310" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="192" y="672" w="32" h="32" xo="32" yo="32" id="10011093" name="inst_7A0F60F3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="192" y="704" w="32" h="32" xo="32" yo="32" id="10011094" name="inst_7F0118A1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="160" y="704" w="32" h="32" xo="32" yo="32" id="10011095" name="inst_9E15D925" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="160" y="672" w="32" h="32" xo="32" yo="32" id="10011096" name="inst_175E0604" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="128" y="672" w="32" h="32" xo="32" yo="32" id="10011097" name="inst_C9198B94" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="128" y="640" w="32" h="32" xo="32" yo="32" id="10011098" name="inst_CCD02C95" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="128" y="672" w="32" h="32" xo="32" yo="32" id="10011099" name="inst_BEC74C26" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="128" y="704" w="32" h="32" xo="32" yo="32" id="10011100" name="inst_7946B7E4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="96" y="704" w="32" h="32" xo="32" yo="32" id="10011101" name="inst_1419F4BE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="96" y="672" w="32" h="32" xo="32" yo="32" id="10011102" name="inst_64C0E860" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="96" y="640" w="32" h="32" xo="32" yo="32" id="10011103" name="inst_AA706892" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="64" y="640" w="32" h="32" xo="32" yo="32" id="10011104" name="inst_7ECA1490" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="64" y="672" w="32" h="32" xo="32" yo="32" id="10011105" name="inst_1AAD4C17" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="64" y="704" w="32" h="32" xo="32" yo="32" id="10011106" name="inst_AD1DC8FE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="32" y="640" w="32" h="32" xo="32" yo="32" id="10011107" name="inst_7480560A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="0" y="640" w="32" h="32" xo="32" yo="32" id="10011108" name="inst_F0E4CC31" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="0" y="672" w="32" h="32" xo="32" yo="32" id="10011109" name="inst_098ABE51" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="0" y="704" w="32" h="32" xo="32" yo="32" id="10011110" name="inst_DB88516D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="32" y="704" w="32" h="32" xo="32" yo="32" id="10011111" name="inst_A8885C94" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="32" y="672" w="32" h="32" xo="32" yo="32" id="10011112" name="inst_94556E28" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="32" y="448" w="64" h="128" xo="320" yo="0" id="10011113" name="inst_8258F935" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="160" y="480" w="64" h="128" xo="320" yo="0" id="10011114" name="inst_99D3AC7D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="288" y="640" w="128" h="64" xo="160" yo="160" id="10011116" name="inst_0F0451C4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="416" y="608" w="64" h="64" xo="288" yo="160" id="10011117" name="inst_027FDE96" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="480" y="544" w="96" h="96" xo="160" yo="64" id="10011118" name="inst_8ED402E8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="576" y="544" w="32" h="64" xo="32" yo="0" id="10011119" name="inst_A33576E8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="608" y="544" w="32" h="64" xo="32" yo="0" id="10011120" name="inst_A1AE4DCF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="640" y="544" w="32" h="64" xo="32" yo="0" id="10011121" name="inst_11E8B087" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="672" y="544" w="32" h="64" xo="32" yo="0" id="10011122" name="inst_522A71A0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="288" y="704" w="32" h="32" xo="32" yo="32" id="10011123" name="inst_08383E80" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="320" y="704" w="32" h="32" xo="32" yo="32" id="10011124" name="inst_6259A4E5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="352" y="704" w="32" h="32" xo="32" yo="32" id="10011125" name="inst_0AE6AAC6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="384" y="704" w="32" h="32" xo="32" yo="32" id="10011126" name="inst_327150AB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="416" y="704" w="32" h="32" xo="32" yo="32" id="10011127" name="inst_BCAAAEB9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="384" y="704" w="32" h="32" xo="32" yo="32" id="10011128" name="inst_9E7F3E65" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="384" y="672" w="32" h="32" xo="32" yo="32" id="10011129" name="inst_5EC90EDB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="416" y="672" w="32" h="32" xo="32" yo="32" id="10011130" name="inst_E0176047" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="416" y="704" w="32" h="32" xo="32" yo="32" id="10011131" name="inst_8928BEA2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="448" y="704" w="32" h="32" xo="32" yo="32" id="10011132" name="inst_5A3C68A5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="448" y="672" w="32" h="32" xo="32" yo="32" id="10011133" name="inst_0D897BCC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="448" y="640" w="32" h="32" xo="32" yo="32" id="10011134" name="inst_93B6D6A0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="480" y="640" w="32" h="32" xo="32" yo="32" id="10011135" name="inst_C8A50E11" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="512" y="640" w="32" h="32" xo="32" yo="32" id="10011136" name="inst_AE55A7BE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="544" y="640" w="32" h="32" xo="32" yo="32" id="10011137" name="inst_1645AA33" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="576" y="640" w="32" h="32" xo="32" yo="32" id="10011138" name="inst_23B38119" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="576" y="608" w="32" h="32" xo="32" yo="32" id="10011139" name="inst_F5660C55" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="544" y="608" w="32" h="32" xo="32" yo="32" id="10011140" name="inst_964649FF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="576" y="608" w="32" h="32" xo="32" yo="32" id="10011141" name="inst_7EAA757E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="608" y="608" w="32" h="32" xo="32" yo="32" id="10011142" name="inst_706BCAC4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="640" y="608" w="32" h="32" xo="32" yo="32" id="10011143" name="inst_83E7789C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="672" y="608" w="32" h="32" xo="32" yo="32" id="10011144" name="inst_DACC0518" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="672" y="640" w="32" h="32" xo="32" yo="32" id="10011145" name="inst_359CFDA8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="640" y="640" w="32" h="32" xo="32" yo="32" id="10011146" name="inst_889D4F8A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="608" y="640" w="32" h="32" xo="32" yo="32" id="10011147" name="inst_1684DF0F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="576" y="672" w="32" h="32" xo="32" yo="32" id="10011148" name="inst_0C6F1A6C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="544" y="672" w="32" h="32" xo="32" yo="32" id="10011149" name="inst_2A7751C1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="512" y="672" w="32" h="32" xo="32" yo="32" id="10011150" name="inst_2859AAE4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="480" y="672" w="32" h="32" xo="32" yo="32" id="10011151" name="inst_5E17CA9A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="480" y="704" w="32" h="32" xo="32" yo="32" id="10011152" name="inst_235BEAD5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="512" y="704" w="32" h="32" xo="32" yo="32" id="10011153" name="inst_2D322987" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="544" y="704" w="32" h="32" xo="32" yo="32" id="10011154" name="inst_596DAABE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="576" y="704" w="32" h="32" xo="32" yo="32" id="10011155" name="inst_EC2B56A0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="608" y="704" w="32" h="32" xo="32" yo="32" id="10011156" name="inst_C86E3C14" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="640" y="704" w="32" h="32" xo="32" yo="32" id="10011157" name="inst_414EB036" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="640" y="672" w="32" h="32" xo="32" yo="32" id="10011158" name="inst_29285E1C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="608" y="672" w="32" h="32" xo="32" yo="32" id="10011159" name="inst_151BEB35" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="640" y="672" w="32" h="32" xo="32" yo="32" id="10011160" name="inst_585FB69D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="672" y="672" w="32" h="32" xo="32" yo="32" id="10011161" name="inst_285DE837" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="672" y="704" w="32" h="32" xo="32" yo="32" id="10011162" name="inst_E28F06E8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="448" y="480" w="64" h="128" xo="320" yo="0" id="10011163" name="inst_0E78F11A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="576" y="416" w="64" h="128" xo="320" yo="0" id="10011164" name="inst_1D70F467" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="352" y="512" w="64" h="128" xo="320" yo="0" id="10011165" name="inst_1CE462E9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="640" y="512" w="64" h="32" xo="0" yo="128" id="10011167" name="inst_963F03DC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="704" y="544" w="32" h="64" xo="64" yo="0" id="10011171" name="inst_14115B8C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="704" y="608" w="32" h="32" xo="64" yo="32" id="10011172" name="inst_A4570F0C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="704" y="640" w="32" h="32" xo="64" yo="32" id="10011173" name="inst_8E9F4399" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="704" y="672" w="32" h="32" xo="64" yo="32" id="10011174" name="inst_14544FCB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="704" y="704" w="32" h="32" xo="64" yo="32" id="10011175" name="inst_C3CAD590" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="192" y="608" w="96" h="96" xo="192" yo="224" id="10011176" name="inst_F0C5A96B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowtileset" x="224" y="672" w="32" h="32" xo="224" yo="288" id="10011178" name="inst_CD92C1A5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+  </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
   <PhysicsWorldLeft>0</PhysicsWorldLeft>
