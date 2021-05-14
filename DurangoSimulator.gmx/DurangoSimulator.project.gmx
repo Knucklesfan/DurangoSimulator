@@ -157,7 +157,9 @@
     </sprites>
     <sprite>sprites\spr_enemy_tube</sprite>
     <sprite>sprites\spr_slope</sprite>
+    <sprite>sprites\msk_slope</sprite>
     <sprite>sprites\spr_hardslope</sprite>
+    <sprite>sprites\msk_hardslope</sprite>
     <sprite>sprites\spr_semisolid</sprite>
     <sprite>sprites\spr_camera</sprite>
     <sprite>sprites\spr_trigger</sprite>
@@ -333,6 +335,7 @@
     <sprite>sprites\spr_snowboard</sprite>
     <sprite>sprites\msk_snowboard</sprite>
     <sprite>sprites\spr_superhardslope</sprite>
+    <sprite>sprites\msk_superhardslope</sprite>
     <sprite>sprites\spr_ingamesnowboard</sprite>
   </sprites>
   <backgrounds name="background">
@@ -468,6 +471,8 @@
     <script>scripts\scr_toppain.gml</script>
     <script>scripts\scr_roomgotonextfade.gml</script>
     <script>scripts\scr_gotonextwithoutfade.gml</script>
+    <script>scripts\move_get_collision_list.gml</script>
+    <script>scripts\update_solid.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\sh_stars.shader</shader>
