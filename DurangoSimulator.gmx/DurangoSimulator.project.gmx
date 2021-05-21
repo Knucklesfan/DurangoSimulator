@@ -462,6 +462,7 @@
     <script>scripts\array.gml</script>
     <script>scripts\scr_playableCharacterMovement.gml</script>
     <script>scripts\scr_genericdrawfunction.gml</script>
+    <script>scripts\scr_newdrawfunction.gml</script>
     <script>scripts\map.gml</script>
     <script>scripts\scr_standardmenu.gml</script>
     <script>scripts\string_keycheck.gml</script>
@@ -473,6 +474,10 @@
     <script>scripts\scr_gotonextwithoutfade.gml</script>
     <script>scripts\move_get_collision_list.gml</script>
     <script>scripts\update_solid.gml</script>
+    <script>scripts\approach.gml</script>
+    <script>scripts\up_slope.gml</script>
+    <script>scripts\down_slope.gml</script>
+    <script>scripts\scr_newplayercontroller.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\sh_stars.shader</shader>
@@ -515,6 +520,7 @@
     <objects name="parents">
       <object>objects\par_enemy</object>
       <object>objects\par_player</object>
+      <object>objects\par_solid</object>
     </objects>
     <objects name="durango">
       <object>objects\obj_durango</object>
@@ -549,7 +555,6 @@
       <object>objects\obj_teleporterexit</object>
       <object>objects\obj_hurtblock</object>
       <object>objects\obj_solid</object>
-      <object>objects\par_solid</object>
       <object>objects\obj_semisolid</object>
       <object>objects\obj_checkpoint</object>
       <object>objects\obj_texaspoint</object>
@@ -787,7 +792,7 @@
     <object>objects\obj_snowboard</object>
     <object>objects\obj_flipper</object>
     <object>objects\obj_whitefade</object>
-    <object>objects\obj_durangosnowboard</object>
+    <object>objects\obj_newdurango</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\durangotakeoff</timeline>
