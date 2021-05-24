@@ -81,6 +81,7 @@ if(steps == 45) {
     steps = 0;
 }
 scr_genericpain(obj_midgamedurango,obj_durangocorpse,obj_middurangohurt)
+scr_genericpain(obj_newdurango,obj_durangocorpse,obj_newdurangohurt)
 </string>
           </argument>
         </arguments>

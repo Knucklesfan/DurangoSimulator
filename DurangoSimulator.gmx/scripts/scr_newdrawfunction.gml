@@ -5,28 +5,28 @@
         image_speed = 0;
         sprite_index = walking
      
-        if(hspd > 0) {
+        if(hsp > 0) {
         sprite_index = walking
-        image_speed = abs(hspd)/4;
+        image_speed = abs(hsp)/4;
         facing = -1;
         }
 
-        if(hspd < 0) {
+        if(hsp < 0) {
         sprite_index = walking
            facing = 1;
-           image_speed = abs(hspd)/4;
+           image_speed = abs(hsp)/4;
         }
-        if(vspd > 0) {
+        if(vsp > 0) {
          image_speed = 0;
                 sprite_index = jumping;
                 image_index = 1;
         }
-        if(vspd < 0) {
+        if(vsp < 0) {
          image_speed = 0;
          sprite_index = jumping;
          image_index = 0;
         }
-        if(onground) {
+        if(!onground) {
          image_speed = 0;
          sprite_index = jumping;
          image_index = 0;

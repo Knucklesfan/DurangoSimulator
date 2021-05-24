@@ -62,7 +62,7 @@ ds_list_add(posy, par_player.y);
 ds_list_add(scale, par_player.facing);
 ds_list_add(index, par_player.image_index);
 ds_list_add(speeda, par_player.image_speed);
-if(instance_exists(obj_luke) || instance_exists(obj_midgamedurango)) {
+if(instance_exists(obj_luke) || instance_exists(obj_midgamedurango) || instance_exists(obj_newdurango)) {
     ds_list_add(vsp,par_player.vsp);
 }
 if(ds_list_size(posx)==distance) {

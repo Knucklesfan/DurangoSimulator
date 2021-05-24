@@ -513,6 +513,8 @@
       <object>objects\obj_midgamedurango</object>
       <object>objects\obj_middurangohurt</object>
       <object>objects\obj_spawnfriends</object>
+      <object>objects\obj_newdurango</object>
+      <object>objects\obj_newdurangohurt</object>
     </objects>
     <objects name="pickle">
       <object>objects\obj_pickle</object>
@@ -792,7 +794,6 @@
     <object>objects\obj_snowboard</object>
     <object>objects\obj_flipper</object>
     <object>objects\obj_whitefade</object>
-    <object>objects\obj_newdurango</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\durangotakeoff</timeline>

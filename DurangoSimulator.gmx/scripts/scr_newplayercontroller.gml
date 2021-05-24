@@ -1,4 +1,5 @@
-var kright, kleft, kjump, xdir, onground;
+///scr_newplayercontroller
+var kright, kleft, kjump, xdir;
 
 kright   = keyboard_check(vk_right);
 kleft    = keyboard_check(vk_left);
@@ -10,73 +11,73 @@ krun = keyboard_check(ord('Z'));
 // Handle horizontal input
 if (xdir != 0)
 {
-    hspd = approach(hspd, (hspd_max*(1+krun)) * xdir, accel);
+    hsp = approach(hsp, (hsp_max*(1+krun)) * xdir, accel);
 }
 else
 {
-    hspd = approach(hspd, 0, fric);
+    hsp = approach(hsp, 0, fric);
 }
 
 // Jump
 if (kjump && onground)
 {
-    vspd = -vspd_max;
+    vsp = -vsp_max;
 }
 
 // Gravity
 if (!onground)
 {
-    vspd = approach(vspd, vspd_max, grav);
+    vsp = approach(vsp, vsp_max, grav);
 }
 
 // Actually move
 var dy;
-repeat (abs(hspd)) // Horizontal movement
+repeat (abs(hsp)) // Horizontal movement
 {
    if (onground) // Check for slopes if we are on the ground
    {
-        if (place_meeting(x + sign(hspd), y, par_solid)) // Up slope
+        if (place_meeting(x + sign(hsp), y, par_solid)) // Up slope
         {
             dy = up_slope();     // Measure the slope
             if (dy <= slope_max) // Climbable
             {
-                x += sign(hspd);
+                x += sign(hsp);
                 y -= dy;
                 continue;
             }
-            hspd = 0; // Unclimbable
+            hsp = 0; // Unclimbable
             break;
         }
-        else if (!place_meeting(x + sign(hspd), y + 1, par_solid)) // Down slope (just like we did up slopes)
+        else if (!place_meeting(x + sign(hsp), y + 1, par_solid)) // Down slope (just like we did up slopes)
         {
             dy = down_slope();        
             if (dy <= slope_max)
             {
-                x += sign(hspd);
+                x += sign(hsp);
                 y += dy;
                 continue;
             }
-            x += sign(hspd); // Continue the loop rather than break the loop to keep momentum
+            x += sign(hsp); // Continue the loop rather than break the loop to keep momentum
             continue;
         }
-        else x += sign(hspd); // Flat
+        else x += sign(hsp); // Flat
     }
     else // We're in the air so we don't check for slopes
     {
-        if (!place_meeting(x + sign(hspd), y, par_solid)) x += sign(hspd);
+        if (!place_meeting(x + sign(hsp), y, par_solid)) x += sign(hsp);
         else
         {
-            hspd = 0;
+            hsp = 0;
             break;
         }
     }
 }
-repeat (abs(vspd)) // Vertical movement
+repeat (abs(vsp)) // Vertical movement
 {
-    if (!place_meeting(x, y + sign(vspd), par_solid)) y += sign(vspd);
+    if (!place_meeting(x, y + sign(vsp), par_solid)) y += sign(vsp);
     else
     {
-        vspd = 0;
+        vsp = 0;
         break;
     }
 }

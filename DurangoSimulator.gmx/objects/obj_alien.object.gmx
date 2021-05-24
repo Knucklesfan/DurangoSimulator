@@ -50,6 +50,7 @@ image_xscale = -1;
           <argument>
             <kind>1</kind>
             <string>scr_genericpain(obj_midgamedurango,obj_durangocorpse,obj_middurangohurt)
+scr_genericpain(obj_newdurango,obj_durangocorpse,obj_newdurangohurt)
 </string>
           </argument>
         </arguments>
