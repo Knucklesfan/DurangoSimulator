@@ -70,8 +70,8 @@
     <instance objName="obj_computerenemy" x="608" y="544" name="inst_E5DA47B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_semisolid" x="512" y="512" name="inst_74D2B649" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_semisolid" x="736" y="512" name="inst_F9CCF3F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_newdurango" x="64" y="544" name="inst_41DA139F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_camera" x="192" y="416" name="inst_D450D636" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_midgamedurango" x="64" y="544" name="inst_4F60F4B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_snowtileset" x="0" y="576" w="32" h="64" xo="32" yo="0" id="10011073" name="inst_99CB14FC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -59,17 +59,17 @@ jump_sprite = spr_shadydude_jump;
             <string>if(instance_exists(par_player) &amp;&amp; !(global.dialog = 1 &amp;&amp; room = level4) ) {
 ds_list_add(posx, par_player.x);
 ds_list_add(posy, par_player.y);
-ds_list_add(scale, par_player.facing);
 ds_list_add(index, par_player.image_index);
 ds_list_add(speeda, par_player.image_speed);
 if(instance_exists(obj_luke) || instance_exists(obj_midgamedurango) || instance_exists(obj_newdurango)) {
     ds_list_add(vsp,par_player.vsp);
+ds_list_add(scale, par_player.facing);
 }
 if(ds_list_size(posx)==distance) {
     
     ds_list_delete(posx,0);
     ds_list_delete(posy,0);
-     ds_list_delete(scale,0);
+    ds_list_delete(scale,0);
     ds_list_delete(index,0);   
     ds_list_delete(speeda,0);
     ds_list_delete(vsp,0);

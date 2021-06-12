@@ -332,7 +332,7 @@ global.loaded = 6;</code>
     <instance objName="obj_cowboytalky" x="3616" y="480" name="inst_A6C7A101" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass" x="3392" y="400" name="inst_9214BBAC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass" x="3408" y="400" name="inst_79E8724B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_newdurango" x="64" y="896" name="inst_1A5E2333" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_midgamedurango" x="64" y="896" name="inst_08C3876E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_texasgrass" x="0" y="896" w="32" h="64" xo="32" yo="0" id="10006645" name="inst_0575C70C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

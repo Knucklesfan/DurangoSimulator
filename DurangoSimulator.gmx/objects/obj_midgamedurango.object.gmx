@@ -25,20 +25,32 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>grv = 0.6; //gravity
+            <string>//NOTE: THIS CODE IS DISGUSTING AND I DONT UNDERSTAND WHY I MADE IT LIKE THIS
+
+grv = 0.6; //gravity
 hsp = 0; //current horizontal speed
 vsp = 0; //current vertical speed
 hsp_walk = 3; //walk speed
 hsp_run = 6; //run speed
 vsp_jump = -12; //jump speed
 facing = -1;
+
+hsp      = 0;
+vsp      = 0;
+hsp_max  = 3;
+vsp_max  = 12;
+slope_max = 2;    // Max climb distance
+accel     = 1.5;
+fric     = 0.8;
+grav      = 0.6;
+facing = 1;
+onground = true;
 fire_timer = 0;
 global.powerup = 0;
 nodie = 0;
 usehp = true;
 startup = true;
 alarm[1] = 1;
-
 </string>
           </argument>
         </arguments>

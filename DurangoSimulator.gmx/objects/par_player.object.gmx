@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>vsp = 0;
 hsp = 0;
+facing = 1;
 </string>
           </argument>
         </arguments>
