@@ -39,7 +39,7 @@
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>par_player</object>
+            <object>obj_midgamedurango</object>
           </argument>
           <argument>
             <kind>0</kind>
@@ -67,11 +67,11 @@
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>par_player.x</string>
+            <string>obj_midgamedurango.x</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>par_player.y-48</string>
+            <string>obj_midgamedurango.y-48</string>
           </argument>
           <argument>
             <kind>0</kind>

@@ -31,7 +31,7 @@ posy = ds_list_create()
 scale = ds_list_create()
 index = ds_list_create()
 speeda = ds_list_create()
-vsp = ds_list_create();
+onground = ds_list_create();
 display_sprite = spr_shadydude;
 jump_sprite = spr_shadydude_jump;
 </string>
@@ -56,14 +56,14 @@ jump_sprite = spr_shadydude_jump;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(instance_exists(par_player) &amp;&amp; !(global.dialog = 1 &amp;&amp; room = level4) ) {
-ds_list_add(posx, par_player.x);
-ds_list_add(posy, par_player.y);
-ds_list_add(index, par_player.image_index);
-ds_list_add(speeda, par_player.image_speed);
+            <string>if(instance_exists(obj_midgamedurango) &amp;&amp; !(global.dialog = 1 &amp;&amp; room = level4) ) {
+ds_list_add(posx, obj_midgamedurango.x);
+ds_list_add(posy, obj_midgamedurango.y);
+ds_list_add(index, obj_midgamedurango.image_index);
+ds_list_add(speeda, obj_midgamedurango.image_speed);
 if(instance_exists(obj_luke) || instance_exists(obj_midgamedurango) || instance_exists(obj_newdurango)) {
-    ds_list_add(vsp,par_player.vsp);
-ds_list_add(scale, par_player.facing);
+    ds_list_add(onground, obj_midgamedurango.onground);
+    ds_list_add(scale, obj_midgamedurango.facing);
 }
 if(ds_list_size(posx)==distance) {
     
@@ -72,7 +72,7 @@ if(ds_list_size(posx)==distance) {
     ds_list_delete(scale,0);
     ds_list_delete(index,0);   
     ds_list_delete(speeda,0);
-    ds_list_delete(vsp,0);
+    //ds_list_delete(vsp,0);
 }
 x = ds_list_find_value(posx,0);
 y = ds_list_find_value(posy,0);
@@ -80,16 +80,12 @@ image_speed = ds_list_find_value(speeda,0);
 image_index = ds_list_find_value(index,0);
 image_xscale = ds_list_find_value(scale,0);
 sprite_index = display_sprite;
-if(ds_list_find_value(vsp,0) &lt; 0) {
+if(ds_list_find_value(onground,0)) {
          image_speed = 0;
          sprite_index = jump_sprite;
          image_index = 1;
 }
-else if(ds_list_find_value(vsp,0) &gt; 0){
-         image_speed = 0;
-         sprite_index = jump_sprite;
-         image_index = 0;
-}
+show_debug_message(string(x) + " " + string(y))
 }
 
 </string>

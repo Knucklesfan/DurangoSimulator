@@ -52,7 +52,7 @@ aim = 90
 }
 else {
 aim = 0;
-downup = (100*-par_player.facing);
+downup = (100*-obj_midgamedurango.facing);
 }
 x = obj_gun.x + downup
 y = obj_gun.y + aim;

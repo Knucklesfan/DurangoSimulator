@@ -190,6 +190,8 @@ if(global.flicker &gt; 0) {
 if(global.bugdetect &gt; 0) {
     global.bugdetect--;
 }
+
+
 </string>
           </argument>
         </arguments>
@@ -228,7 +230,13 @@ draw_set_color(c_red);
 s += " no death mode enabled.";
 }
 if(global.debug) {
-    draw_text(10,10, s); 
+    f = "";
+    with(all) {
+        other.f += object_get_name(object_index) + " ";
+    }
+    
+    draw_text_ext(10,40, f,10,502);
+    
     if(instance_exists(par_player)) {
         draw_text(10,20, string(par_player.x));
         draw_text(10,30, string(par_player.y));

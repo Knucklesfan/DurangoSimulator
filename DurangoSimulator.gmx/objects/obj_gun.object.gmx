@@ -52,11 +52,11 @@ reloadtime = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(instance_exists(par_player)) {
+            <string>if(instance_exists(obj_midgamedurango)) {
 if(shoottimer &gt; 0) shoottimer--;
 if(reloadtimer &gt; 0) reloadtimer--;
-x = par_player.x
-y = par_player.y-32
+x = obj_midgamedurango.x
+y = obj_midgamedurango.y-32
 image_angle = point_direction(x,y,obj_crosshair.x,obj_crosshair.y);
 if( instance_exists(obj_luke) || instance_exists(obj_midgamedurango)) {
 if(global.dialog == 0 &amp;&amp; (mouse_check_button_pressed(mb_left) | keyboard_check_pressed(ord('C')))) {

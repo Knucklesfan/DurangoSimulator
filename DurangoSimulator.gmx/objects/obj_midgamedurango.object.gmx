@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>//NOTE: THIS CODE IS DISGUSTING AND I DONT UNDERSTAND WHY I MADE IT LIKE THIS
-
+//I HATE DURANGO SIMULATOR SO MUCH WHAT THE HELL KS THIS TIHFAMEKALJFLKDSJFKSADJFHAB
 grv = 0.6; //gravity
 hsp = 0; //current horizontal speed
 vsp = 0; //current vertical speed
@@ -117,7 +117,7 @@ y = global.checkpoint.y;
             <kind>1</kind>
             <string>///PLATFORMING CRAP
 if(global.dialog = 0) {
-    scr_playableCharacterMovement(); //handles all player movement stuff
+    scr_newplayercontroller(); //handles all player movement stuff
 }
 </string>
           </argument>
@@ -346,7 +346,7 @@ draw_text_ext(456,32,mousetxt,10,200);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_genericdrawfunction(spr_durango_walk,spr_durango_jump,spr_durango_die);
+            <string>scr_newdrawfunction(spr_durango_walk,spr_durango_jump,spr_durango_die);
 </string>
           </argument>
         </arguments>
