@@ -36,7 +36,7 @@ scr_dialog_add_line(5, "Cowboy:~It finally melted about the time you~came throug
 scr_dialog_add_line(6, "Johnny:~How the heck are we gonna get out of~here? I can't swim, I'm from Alaska!~We don't believe in swimming!~", "", "NEXT",-1,1);
 scr_dialog_add_line(7, "Knux:~Listen, I hate to interject here, but~let's address the elephant in the~room: Why the hell is there a giant~freaking tank in the middle of~nowhere?~", "", "NEXT",-1,1);
 scr_dialog_add_line(8, "Cowboy:~Oh right, that's our tank for oil~production.~", "", "NEXT",-1,1);
-scr_dialog_add_line(9, "Knux:~Your |S|WHAT|N| for |G|WHAT|N|?~", "", "NEXT",-1,1);
+scr_dialog_add_line(9, "Knux:~Your |S|WHAT|N| for |S|WHAT|N|?~", "", "NEXT",-1,1);
 scr_dialog_add_line(10, "Cowboy:~Yeah, we sit by the side of the road,~wait for foreign cars to drive by,~then blow 'em up with the tank and~drink their gas off the ground and~resell it to local Shell Gas Stations~", "", "NEXT",-1,1);
 scr_dialog_add_line(11, "Durango:~I guess you could call it... An OIL~Tank! Hahahahahahahaha~", "", "THEFUNNY",-1,1);
 scr_dialog_add_line(12, "CONGRATULATIONS:~YOU SAID THE FUNNY~", "", "NEXT",-1,1);

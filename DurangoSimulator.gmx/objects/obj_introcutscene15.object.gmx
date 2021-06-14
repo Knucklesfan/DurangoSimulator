@@ -26,11 +26,15 @@
           <argument>
             <kind>1</kind>
             <string>conversation = 0;
-scr_dialog_add_line(0, "Durango:~Well, would you look at that! It's a~snowboard!~", "", "NEXT",-1,1);
-scr_dialog_add_line(1, "Knux:~Dude, there's literally no way you're~planning to actually take on that~slope, right?~", "", "NEXT",-1,1);
-scr_dialog_add_line(2, "Durango:~Oh please, Knux, I've surfed the~greatest waves of all time in Calli,~you really think I can't take on a~simple snow slope? Snow's just frozen~water anyways.~", "", "ROOM",-1,1);
-
-
+scr_dialog_add_line(0, "Durango:~Hey hey! Look, it's a snowboard!~", "", "NEXT",-1,1);
+scr_dialog_add_line(1, "Knux:~Durango, you can't actually be~serious about that right???~", "", "NEXT",-1,1);
+scr_dialog_add_line(2, "Durango:~Hey, back in calli we surfed waves~like these till no end! Snow's~basically just frozen water anyways..~", "", "NEXT",-1,1);
+scr_dialog_add_line(3, "Knux:~Yeah, but don't you think-~", "", "ALARM0NOW",-1,1);
+scr_dialog_add_line(4, "Durango:~WOAH WHAT'S GOING ON?~", "", "NEXT",-1,1);
+scr_dialog_add_line(5, "Knux:~Oh great. Here we go again.~", "", "EYESOPEN",-1,1);
+xg = 0;
+screenshake = false;
+movetime = false;
 //we set all the relevent dialog options and then start the dialog box.
 //note that if you only want one style of dialog box, you only need to set these at the 
 //very beginning in the obj_dialog create event and leave them that way
@@ -79,6 +83,119 @@ if(global.dialog == 0)
     //start the dialog
     scr_dialog_start();
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>audio_stop_all();
+screenshake=false;
+audio_play_sound(snd_wavecrash,0,false);
+movetime = true;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>audio_stop_all();
+screenshake = true;
+audio_play_sound(sound13_Rumbling_Sound_Effect,0,true);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(screenshake) {
+    view_object[0] = -1;
+    shakeIntensity = 5;
+    view_xview[0] += choose(random(shakeIntensity), random(-shakeIntensity));
+    view_yview[0] += choose(random(shakeIntensity), random(-shakeIntensity));
+}
+if(movetime) {
+    xg+=25;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="75">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+draw_set_alpha(1);
+
+draw_set_colour(c_blue);
+
+draw_rectangle(0,0,xg,room_height,-1);
+show_debug_message(xg);
+draw_set_alpha(1); //reset alpha value so it doesn't mess with other draw events
+
 </string>
           </argument>
         </arguments>

@@ -62,6 +62,9 @@ global.lasthitx = 0;
 global.lasthity = 0;
 global.bugdetect = 0;
 oldfadespeed = 0;
+global.walksprite = spr_durango_walk; //i shouldnt have to do this
+global.jumpsprite = spr_durango_jump;
+global.deathsprite = spr_durango_die;
 </string>
           </argument>
         </arguments>
@@ -230,12 +233,14 @@ draw_set_color(c_red);
 s += " no death mode enabled.";
 }
 if(global.debug) {
-    //f = "";
-    //with(all) {
-    //    other.f += object_get_name(object_index) + " ";
-    //}
+    f = "";
+    with(all) {
+        if(object_get_parent(object_index) != obj_solid &amp;&amp; object_get_name(object_index) == "obj_dialog" ) {
+        other.f += object_get_name(object_index) + " ";
+        }
+    }
     
-    //draw_text_ext(10,40, f,10,502);
+    draw_text_ext(10,40, f,10,502);
     
     if(instance_exists(par_player)) {
         draw_text(10,20, string(par_player.x));

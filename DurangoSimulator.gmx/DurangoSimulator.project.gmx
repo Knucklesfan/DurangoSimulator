@@ -113,6 +113,7 @@
     <sound>sound\sound95_Glass_broken_sound_effect_no_copyright</sound>
     <sound>sound\sound96_sonicunleashed_apotos_daytime___windmill_isle</sound>
     <sound>sound\sound97_dkc2_ice_xg__1_</sound>
+    <sound>sound\snd_wavecrash</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="durango">
