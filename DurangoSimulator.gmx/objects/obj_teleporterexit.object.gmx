@@ -128,7 +128,7 @@
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>obj_luke</object>
+            <object>obj_spawnluke</object>
           </argument>
           <argument>
             <kind>0</kind>

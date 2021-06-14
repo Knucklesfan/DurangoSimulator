@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>if(collision_rectangle(x,0,x+32*image_xscale,room_height,par_player,false,true)) {
 
-if(obj_luke.vsp = 0) {
+if(obj_midgamedurango.vsp = 0) {
 instance_create(x,y,obj_introcutscene12);
 instance_destroy();
 }

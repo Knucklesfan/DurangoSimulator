@@ -62,7 +62,6 @@ global.loaded = 6;</code>
     <instance objName="obj_solid" x="0" y="0" name="inst_3A6B355A" locked="0" code="" scaleX="1" scaleY="20" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="0" y="640" name="inst_7BD39488" locked="0" code="" scaleX="10" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="384" y="576" name="inst_93765EDD" locked="0" code="" scaleX="9" scaleY="7" colour="4294967295" rotation="0"/>
-    <instance objName="obj_luke" x="160" y="640" name="inst_5AEBD241" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gun" x="160" y="608" name="inst_A144781B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_followingnpc" x="128" y="640" name="inst_3084D078" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_crosshair" x="288" y="608" name="inst_AB68802B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -141,6 +140,7 @@ global.loaded = 6;</code>
     <instance objName="obj_pinebox" x="3168" y="192" name="inst_DFBAB38F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_camera" x="128" y="576" name="inst_6A5D084A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_checkpoint" x="2208" y="480" name="inst_426C74E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spawnluke" x="160" y="640" name="inst_33EF6806" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_mother3" x="-128" y="384" w="256" h="256" xo="0" yo="0" id="10002715" name="inst_1E70DBC6" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

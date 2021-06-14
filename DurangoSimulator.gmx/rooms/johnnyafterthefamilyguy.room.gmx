@@ -57,9 +57,9 @@ audio_play_sound(sound87_output,0,true);</code>
     <instance objName="obj_solid" x="-16" y="0" name="inst_EDDDD803" locked="0" code="" scaleX="0.75" scaleY="11.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_johnny" x="320" y="368" name="inst_E9952FA6" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_teleporter" x="424" y="280" name="inst_A544217F" locked="0" code="interact = obj_teleporterexit;&#xA;roomd = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_luke" x="176" y="368" name="inst_260D31ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_teleporterexit" x="64" y="280" name="inst_1C986C12" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_introcutscene10" x="8" y="32" name="inst_25E32E18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spawnluke" x="168" y="368" name="inst_7AA827D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

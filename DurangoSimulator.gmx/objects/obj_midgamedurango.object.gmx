@@ -43,7 +43,7 @@ slope_max = 2;    // Max climb distance
 accel     = 1.5;
 fric     = 0.8;
 grav      = 0.6;
-facing = 1;
+facing = -1;
 onground = true;
 fire_timer = 0;
 global.powerup = 0;
@@ -76,6 +76,9 @@ alarm[1] = 1;
             <string>if(global.checkpoint != null &amp;&amp; startup) {
 x = global.checkpoint.x;
 y = global.checkpoint.y;
+global.walksprite = spr_durango_walk;
+global.jumpsprite = spr_durango_jump;
+global.deathsprite = spr_durango_die;
 }
 </string>
           </argument>
@@ -346,7 +349,7 @@ draw_text_ext(456,32,mousetxt,10,200);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_newdrawfunction(spr_durango_walk,spr_durango_jump,spr_durango_die);
+            <string>scr_newdrawfunction(global.walksprite,global.jumpsprite,global.deathsprite);
 </string>
           </argument>
         </arguments>

@@ -101,7 +101,7 @@ if(global.dialog == 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if place_meeting(x, y, obj_luke) {
+            <string>if place_meeting(x, y, obj_midgamedurango) {
 if(keyboard_check_pressed(vk_up)) {
 //we set all the relevent dialog options and then start the dialog box.
 //note that if you only want one style of dialog box, you only need to set these at the 

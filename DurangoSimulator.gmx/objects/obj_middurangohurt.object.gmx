@@ -155,7 +155,7 @@
             <kind>1</kind>
             <string>facing = -1;
 powerup = 0;
-
+sprite_index = global.deathsprite;
 </string>
           </argument>
         </arguments>

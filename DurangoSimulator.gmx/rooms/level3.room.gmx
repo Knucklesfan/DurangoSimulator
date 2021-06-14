@@ -63,7 +63,6 @@ global.loaded = 6;</code>
     <instance objName="obj_solid" x="0" y="672" name="inst_8BBB1196" locked="0" code="" scaleX="9" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="0" y="0" name="inst_6B54E400" locked="0" code="" scaleX="1" scaleY="21" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="160" y="0" name="inst_D53656BE" locked="0" code="" scaleX="6" scaleY="10" colour="4294967295" rotation="0"/>
-    <instance objName="obj_luke" x="96" y="96" name="inst_60A692A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_semisolid" x="672" y="384" name="inst_6689644C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_semisolid" x="800" y="384" name="inst_1DA1B583" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_alien" x="736" y="416" name="inst_8B4E0DA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -73,6 +72,7 @@ global.loaded = 6;</code>
     <instance objName="obj_alien" x="768" y="640" name="inst_575341D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_semisolid" x="640" y="608" name="inst_E5201F7D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_semisolid" x="928" y="608" name="inst_E16D31FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spawnluke" x="96" y="96" name="inst_FCC2927C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_graveyard" x="0" y="672" w="32" h="32" xo="32" yo="64" id="10002302" name="inst_E070680B" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

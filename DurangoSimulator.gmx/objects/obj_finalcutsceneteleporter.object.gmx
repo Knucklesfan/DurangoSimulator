@@ -52,8 +52,8 @@
           <argument>
             <kind>1</kind>
             <string>obj_camera.override = 0;
-obj_luke.hsp = 0;
-obj_luke.image_index = 0;
+obj_midgamedurango.hsp = 0;
+obj_midgamedurango.image_index = 0;
 conversation = 0;
 scr_dialog_add_line(0, "|D|Alien Shephard:~Who the heck are you?~", "", "NEXT", -1, 1);
 scr_dialog_add_line(1, "|D|Luke:~It is I, Luke! And I am here~to kick your butt!~", "", "NEXT", -1, 1);
@@ -144,7 +144,7 @@ if(global.dialog == 0)
           <argument>
             <kind>1</kind>
             <string>obj_camera.override = 0;
-obj_luke.hsp = 6;
+obj_midgamedurango.hsp = 6;
 alarm[5] = 85;
 </string>
           </argument>
@@ -389,7 +389,7 @@ if(global.dialog == 0)
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>obj_luke</object>
+            <object>obj_spawnluke</object>
           </argument>
           <argument>
             <kind>0</kind>

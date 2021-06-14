@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>-1</persistent>
-  <parentName>par_player</parentName>
+  <parentName>self</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -230,12 +230,12 @@ draw_set_color(c_red);
 s += " no death mode enabled.";
 }
 if(global.debug) {
-    f = "";
-    with(all) {
-        other.f += object_get_name(object_index) + " ";
-    }
+    //f = "";
+    //with(all) {
+    //    other.f += object_get_name(object_index) + " ";
+    //}
     
-    draw_text_ext(10,40, f,10,502);
+    //draw_text_ext(10,40, f,10,502);
     
     if(instance_exists(par_player)) {
         draw_text(10,20, string(par_player.x));

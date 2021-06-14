@@ -82,3 +82,24 @@ repeat (abs(vsp)) // Vertical movement
     }
 }
 
+//copied straight from the old engine who cares
+if(place_meeting(x,y,par_solid)) {
+    for(var i = 0; i<1000; ++i) {
+    //Right
+    if(!place_meeting(x+i,y,par_solid)) {
+    x+= i;
+    }
+    //Left
+    if(!place_meeting(x-i,y,par_solid)) {
+        x-= i;
+    }
+    //Up
+    if(!place_meeting(x,y-i,par_solid)) {
+    y-= i;
+    }
+        if(!place_meeting(x,y+i,par_solid)) {
+    y+= i;
+    }
+    }
+}
+
